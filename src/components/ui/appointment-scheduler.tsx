@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { ChevronLeft, ChevronRight, Clock, Globe, Video, User } from "lucide-react"
+import { ChevronLeft, ChevronRight, Clock, Globe, User } from "lucide-react"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
@@ -274,7 +274,7 @@ export function AppointmentScheduler({
 
         {/* Time Slots */}
         <div className="space-y-2 overflow-y-auto pr-2 scrollbar-thin max-h-[400px] lg:max-h-[500px]">
-          {timeSlots.map((slot, index) => {
+          {timeSlots.map((slot) => {
             const isSelected = slot.time === selectedTime
             return (
               <button

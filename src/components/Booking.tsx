@@ -4,9 +4,7 @@ import { motion } from "framer-motion";
 import { AppointmentScheduler } from "@/components/ui/appointment-scheduler";
 
 export function Booking() {
-  const now = new Date();
-  const currentMonth = now.getMonth();
-  const currentYear = now.getFullYear();
+
 
   // Get dates for the current month that have availability
   const availableDates = [
