@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { cn } from "@/lib/utils";
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { Globe, Phone, MapPin } from "lucide-react";
 
 // Icon component for contact details
@@ -16,7 +16,7 @@ const InfoIcon = ({ type }: { type: 'website' | 'phone' | 'address' }) => {
 };
 
 // Prop types for the HeroSection component
-interface HeroSectionProps extends React.HTMLAttributes<HTMLDivElement> {
+interface HeroSectionProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 'title'> {
   logo?: {
     url: string;
     alt: string;
@@ -41,7 +41,7 @@ const HeroSection = React.forwardRef<HTMLDivElement, HeroSectionProps>(
   ({ className, logo, slogan, title, subtitle, callToAction, backgroundImage, contactInfo, ...props }, ref) => {
     
     // Animation variants for the container to orchestrate children animations
-    const containerVariants = {
+    const containerVariants: Variants = {
       hidden: { opacity: 0 },
       visible: {
         opacity: 1,
@@ -53,7 +53,7 @@ const HeroSection = React.forwardRef<HTMLDivElement, HeroSectionProps>(
     };
 
     // Animation variants for individual text/UI elements
-    const itemVariants = {
+    const itemVariants: Variants = {
       hidden: { y: 20, opacity: 0 },
       visible: {
         y: 0,
@@ -67,7 +67,8 @@ const HeroSection = React.forwardRef<HTMLDivElement, HeroSectionProps>(
     
     return (
       <motion.section
-        ref={ref}
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        ref={ref as any}
         id="home"
         className={cn(
           "relative flex w-full flex-col overflow-hidden bg-brand-light text-brand-navy md:flex-row",
@@ -76,7 +77,8 @@ const HeroSection = React.forwardRef<HTMLDivElement, HeroSectionProps>(
         initial="hidden"
         animate="visible"
         variants={containerVariants}
-        {...props}
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        {...(props as any)}
       >
         {/* Left Side: Content */}
         <div className="flex w-full flex-col justify-between p-8 md:w-1/2 md:p-12 lg:w-3/5 lg:p-16 xl:p-24">
