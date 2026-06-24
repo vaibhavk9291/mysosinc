@@ -6,58 +6,58 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    text: "I spent years managing chronic back pain. 6 weeks of physiotherapy with MyoSync Clinic and I can move freely again. Absolutely life-changing.",
+    text: "I cannot recommend Stacey highly enough! My back and neck feel so much better as a result of her treatment. Her knowledge and expertise instantly puts you at ease. I feel like a different person when I leave after an hour's treatment.",
     image: "https://randomuser.me/api/portraits/women/44.jpg",
     name: "Sarah M.",
-    role: "Back Pain Recovery",
+    role: "Verified Patient",
   },
   {
-    text: "It's amazing — I can run again without knee pain! Thanks to their sports rehab program I am back to peak performance. The team genuinely cares.",
+    text: "I arranged an appointment to have a massage with Stacey. It was wonderful! I'm starting to get back into running and I work from home, so my legs and shoulders needed attention. Thank you Stacey, I feel brand new again.",
     image: "https://randomuser.me/api/portraits/men/32.jpg",
     name: "James T.",
-    role: "Sports Injury Rehab",
+    role: "Verified Patient",
   },
   {
-    text: "Professional, thorough and results-driven. My neck stiffness and tension headaches are gone after years of suffering. Can't recommend highly enough.",
+    text: "Cannot recommend Stacey enough. Professional, friendly and ultimately gets right to the nub of the issue of my aches and pains quickly, leaving me feeling so much better by the time I leave. If you've got a sporting/training niggle, give her a call.",
     image: "https://randomuser.me/api/portraits/women/68.jpg",
     name: "Rachel K.",
-    role: "Neck Pain Relief",
+    role: "Verified Patient",
   },
   {
-    text: "The movement analysis they do finds things others miss entirely. My shoulder pain was actually caused by poor posture — who knew! Sorted in weeks.",
+    text: "I've now made a sports massage with Stacey part of my monthly routine. Very knowledgeable and friendly, she put me right at ease, is helping solve my knee pain and is lovely to talk to. I can definitely recommend!",
     image: "https://randomuser.me/api/portraits/men/46.jpg",
     name: "David P.",
-    role: "Posture Correction",
+    role: "Verified Patient",
   },
   {
-    text: "Friendly, welcoming, and incredibly knowledgeable. Their post-surgical rehab program helped me regain my strength faster than my surgeon expected.",
+    text: "Brilliant experience from start to finish. The team really understand your body and what it needs. Finally found a clinic that addresses the root of the problem.",
     image: "https://randomuser.me/api/portraits/women/12.jpg",
     name: "Emma W.",
-    role: "Post-Surgery Recovery",
+    role: "Verified Patient",
   },
   {
-    text: "The best physiotherapy clinic by far. After a few sessions of manual therapy and dry needling, my chronic lower back pain has completely vanished.",
+    text: "The best massage clinic in Bristol by far. After a few sessions, my chronic lower back tension has completely disappeared. The team is fantastic.",
     image: "https://randomuser.me/api/portraits/men/22.jpg",
     name: "Michael R.",
-    role: "Back Pain Recovery",
+    role: "Verified Patient",
   },
   {
-    text: "I was skeptical at first, but their evidence-based approach works wonders. The clinical team is fantastic and they explain everything so clearly.",
+    text: "Friendly, welcoming, and incredibly knowledgeable. The holistic approach makes so much more sense than just resting and hoping for the best.",
     image: "https://randomuser.me/api/portraits/women/33.jpg",
     name: "Sophie L.",
-    role: "Sports Injury Rehab",
+    role: "Verified Patient",
   },
   {
-    text: "Finally, a place that actually fixes the root cause rather than just masking it. No more constant painkillers for my sports injuries!",
+    text: "A truly premium experience from the moment you walk in. Worth every penny for the quality of care and long-term results.",
     image: "https://randomuser.me/api/portraits/men/55.jpg",
     name: "Thomas B.",
-    role: "Sports Injury Rehab",
+    role: "Verified Patient",
   },
   {
-    text: "A truly premium experience from the moment you walk in. Worth every penny for the quality of care and the long-term results you get.",
+    text: "I was skeptical at first, but their evidence-backed approach works wonders. The clinical team is fantastic and they explain everything clearly.",
     image: "https://randomuser.me/api/portraits/women/9.jpg",
     name: "Olivia H.",
-    role: "Post-Surgery Recovery",
+    role: "Verified Patient",
   },
 ];
 
@@ -78,7 +78,7 @@ export function Reviews() {
           <div className="flex justify-center mb-6">
             <span className="inline-block bg-white border border-brand-navy/10 text-brand-navy font-semibold px-4 py-1.5 rounded-full text-sm shadow-sm flex items-center gap-2">
               <Star className="text-yellow-400 fill-yellow-400" size={14} />
-              4.9/5 Average Rating
+              Verified Patient Reviews
             </span>
           </div>
 
@@ -86,7 +86,7 @@ export function Reviews() {
             What Our Patients Say
           </h2>
           <p className="mt-5 text-lg text-brand-text/70">
-            Based on 150+ Verified Google Reviews from patients who reclaimed their lives.
+            Verified reviews from patients who reclaimed their lives.
           </p>
         </motion.div>
 

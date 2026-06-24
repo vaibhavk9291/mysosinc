@@ -1,26 +1,26 @@
-import { Activity, Dumbbell, PersonStanding, ClipboardList } from "lucide-react";
+import { Award, Microscope, Leaf, Star } from "lucide-react";
 
 export function TrustStrip() {
   const items = [
     {
-      icon: <Activity size={32} className="text-brand-teal" />,
-      title: "Pain Relief",
-      subtitle: "Target the root cause, not just symptoms."
+      icon: <Award size={32} className="text-brand-teal" />,
+      title: "Qualified & Experienced Team",
+      subtitle: "Sports therapists & massage specialists"
     },
     {
-      icon: <Dumbbell size={32} className="text-brand-teal" />,
-      title: "Sports Rehabilitation",
-      subtitle: "Get back to peak performance safely."
+      icon: <Microscope size={32} className="text-brand-teal" />,
+      title: "Holistic, Evidence-Based Care",
+      subtitle: "Tailored to every individual"
     },
     {
-      icon: <PersonStanding size={32} className="text-brand-teal" />,
-      title: "Posture Correction",
-      subtitle: "Improve movement and prevent recurring pain."
+      icon: <Leaf size={32} className="text-brand-teal" />,
+      title: "No Surgery. No Drugs.",
+      subtitle: "Natural recovery pathways"
     },
     {
-      icon: <ClipboardList size={32} className="text-brand-teal" />,
-      title: "Personalized Recovery",
-      subtitle: "Custom treatment plans built for you."
+      icon: <Star size={32} className="text-brand-teal" />,
+      title: "Highly Recommended",
+      subtitle: "Trusted by patients across Bristol"
     }
   ];
 
@@ -29,7 +29,7 @@ export function TrustStrip() {
       <div className="container mx-auto px-6 lg:px-12">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold md:text-4xl text-brand-navy tracking-tight mb-4">
-            Why People Choose MyoSync
+            Why People Choose Us
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

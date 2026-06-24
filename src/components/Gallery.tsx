@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 
 export function Gallery() {
   const images = [
@@ -23,12 +22,9 @@ export function Gallery() {
 
         <div className="grid grid-cols-1 md:grid-cols-4 auto-rows-[250px] gap-4 max-w-6xl mx-auto">
           {images.map((image, index) => (
-            <motion.div
+            <div
               key={index}
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`relative rounded-2xl overflow-hidden group ${image.span || ''}`}
+              className={`relative rounded-2xl overflow-hidden group animate-fade-in ${image.span || ''}`}
             >
               <img 
                 src={image.src} 
@@ -36,7 +32,7 @@ export function Gallery() {
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-brand-navy/20 group-hover:bg-transparent transition-colors duration-500" />
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

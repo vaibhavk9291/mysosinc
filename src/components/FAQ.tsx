@@ -6,18 +6,16 @@ import { ChevronDown } from "lucide-react";
 
 export function FAQ() {
   const faqs = [
-    { q: "Do physiotherapy treatments hurt?", a: "Some techniques may cause mild discomfort, but we always work within your tolerance. We have a range of therapeutic tools to suit every patient." },
-    { q: "Does it work for everyone?", a: "We have a very high success rate for musculoskeletal issues. Nothing works for absolutely everyone, but our evidence-based track record speaks for itself." },
-    { q: "Is your approach backed by science?", a: "Yes. All our treatments are grounded in the latest evidence-based physiotherapy and rehabilitation research." },
-    { q: "Are your staff qualified?", a: "Absolutely. All our clinical staff hold university degrees in Physiotherapy and are registered with relevant professional bodies." },
-    { q: "How much does it cost?", a: "The initial consultation and assessment is currently £89. Follow-up sessions depend on your treatment plan." },
-    { q: "How many sessions will I need?", a: "This depends on your condition's severity. We will always aim to minimise the sessions needed and give you a clear, honest care plan." },
-    { q: "What conditions do you treat?", a: "Back pain, neck pain, sports injuries, post-surgical rehabilitation, knee/ankle pain, and postural issues. Call us if your condition isn't listed." },
-    { q: "Is my consultation private?", a: "Yes. Your medical data and consultation details are strictly confidential." },
-    { q: "Do I need a doctor's referral?", a: "No, you do not need a referral to see our physiotherapists. You can book directly with us." },
-    { q: "What happens after the consultation?", a: "Your physiotherapist will walk you through your personalized recovery plan. There is no obligation to proceed—just honest, expert advice." },
-    { q: "What should I wear?", a: "Please wear loose, comfortable clothing that allows us to assess your movement and access the area of concern." },
-    { q: "Can I bring someone with me?", a: "Yes, you're welcome to bring a family member or friend to your consultation." }
+    { q: "Does the treatment hurt?", a: "We always work within your comfort levels. Some techniques like deep tissue massage or trigger point work may feel firm, but should never be unbearably painful. We regularly check in with you throughout every session." },
+    { q: "Do I need to play sport to come to you?", a: "Absolutely not! We treat everyone — from professional athletes to office workers, retirees to fibromyalgia sufferers. If you're in pain or want to move better, we can help." },
+    { q: "Is your treatment evidence-based?", a: "Yes. All our techniques and rehabilitation programmes are grounded in current clinical evidence. Our therapists hold recognised qualifications and continue their professional development." },
+    { q: "Are your staff qualified?", a: "Yes. Our team holds degrees in Sports Therapy, Sports Rehabilitation, and Sport & Biomedical Science from accredited UK universities, alongside ongoing CPD." },
+    { q: "How much does it cost?", a: "Pricing varies by session type and location. Please visit the relevant location booking page for current pricing, or get in touch directly." },
+    { q: "How many sessions will I need?", a: "This depends on the nature and history of your complaint. We'll give you an honest assessment at your first appointment and recommend a realistic treatment plan." },
+    { q: "What conditions do you treat?", a: "Back pain, neck pain, shoulder pain, knee pain, sports injuries, muscle tightness, sciatica, postural issues, repetitive strain, fibromyalgia and more — if you're unsure, just ask." },
+    { q: "Can I bring someone with me?", a: "Yes, you are very welcome to bring a companion to your appointment." },
+    { q: "What is Remedial Massage?", a: "Remedial massage is a sports massage for the non-sporty. The same clinical techniques are applied to anyone suffering from aches, pains, or restricted movement, regardless of whether the cause is sports-related or not." },
+    { q: "What should I expect from my first appointment?", a: "A detailed discussion of your medical history, an in-depth assessment, hands-on manual treatment, and a clear rehabilitation plan with guidance and support throughout." }
   ];
 
   const mid = Math.ceil(faqs.length / 2);
@@ -27,16 +25,12 @@ export function FAQ() {
   return (
     <section className="py-24 bg-white" id="faq">
       <div className="container mx-auto px-6 lg:px-12">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+        <div
+          className="text-center mb-16 animate-fade-in"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-4">Got Questions? We Have Answers.</h2>
           <p className="text-lg text-brand-text/70">Everything you need to know before booking.</p>
-        </motion.div>
+        </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 max-w-6xl mx-auto">
           <div className="flex flex-col gap-4">

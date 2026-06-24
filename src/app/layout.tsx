@@ -7,13 +7,13 @@ import { Navigation } from "@/components/Navigation";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MyoSync Clinic | Physiotherapy & Rehabilitation Specialists",
-  description: "Expert physiotherapy and rehabilitation services for pain relief, sports injuries, posture correction and recovery. Book your consultation today.",
+  title: "Sports & Remedial Massage & Physio in Bristol | Body Repair Clinic",
+  description: "Expert sports & remedial massage, physio therapies in Filton, Bristol. Helping you recover, prevent injuries, and perform at your best. Book online today.",
   openGraph: {
-    title: "MyoSync Clinic | Physiotherapy & Rehabilitation Specialists",
-    description: "Expert physiotherapy and rehabilitation services for pain relief, sports injuries, posture correction and recovery. Book your consultation today.",
-    url: "https://myosyncclinic.com",
-    siteName: "MyoSync Clinic",
+    title: "Sports & Remedial Massage & Physio in Bristol | Body Repair Clinic",
+    description: "Expert sports & remedial massage, physio therapies in Filton, Bristol. Helping you recover, prevent injuries, and perform at your best. Book online today.",
+    url: "https://www.thebristolbodyrepairclinic.co.uk",
+    siteName: "The Bristol Body Repair Clinic",
     images: [
       {
         url: "https://spinebodyhealth.co.uk/wp-content/uploads/2025/11/upscalemedia-transformed-1-scaled-1.png",

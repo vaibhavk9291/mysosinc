@@ -13,74 +13,32 @@ import {
 
 const conditionsData = [
   {
-    id: "back-pain",
-    title: "Back Pain Treatment",
-    description: "Targeted physiotherapy treatments to eliminate persistent lower and upper back pain safely and effectively.",
-    href: "#",
+    id: "sports-massage",
+    title: "Sports Massage",
+    description: "Sports massage manipulates soft tissue layers to reduce tension caused by exercise, enhance performance and mobility, ease chronic pain, aid injury recovery, and prevent future injuries — for athletes and non-athletes alike.",
+    href: "/sports-massage",
     image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1000&auto=format&fit=crop",
   },
   {
-    id: "neck-pain",
-    title: "Neck Pain Treatment",
-    description: "Restoring mobility and addressing the root causes of cervical pain, tension headaches, and stiffness.",
-    href: "#",
+    id: "injury-therapy",
+    title: "Injury Therapy",
+    description: "Comprehensive injury assessment, tailored hands-on treatment, and personalised rehabilitation programmes. We treat illness, injury or disability through movement, exercise, manual therapy, education and advice.",
+    href: "/injury-therapy",
     image: "https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=1000&auto=format&fit=crop",
   },
   {
-    id: "sports-injury",
-    title: "Sports Injury Rehabilitation",
-    description: "Evidence-based rehab protocols to get athletes back to peak performance safely.",
-    href: "#",
+    id: "remedial-massage",
+    title: "Remedial Massage",
+    description: "Focused massage treatment that eases specific aches, restrictions or dysfunction — whether from work arrangements, hobbies, stress, accident or injury. Think of it as a sports massage for the non-sporty.",
+    href: "/remedial-massage",
     image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1000&auto=format&fit=crop",
   },
   {
-    id: "post-surgical",
-    title: "Post Surgical Rehabilitation",
-    description: "Guided recovery plans to restore strength and range of motion after orthopedic surgeries.",
-    href: "#",
+    id: "cupping",
+    title: "Cupping Therapy",
+    description: "A centuries-old holistic therapy using suction cups to stimulate blood flow, release tension, and promote healing. Excellent for muscle pain, circulation, detoxification, and stress relief.",
+    href: "/cupping",
     image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1000&auto=format&fit=crop",
-  },
-  {
-    id: "shoulder-pain",
-    title: "Shoulder Pain Treatment",
-    description: "Expert care for rotator cuff injuries, frozen shoulder, and impingement syndromes.",
-    href: "#",
-    image: "https://images.unsplash.com/photo-1559757175-9b81313e89a5?q=80&w=1000&auto=format&fit=crop",
-  },
-  {
-    id: "knee-pain",
-    title: "Knee Pain Rehabilitation",
-    description: "Strengthening and mobility therapies for runner's knee, ligament issues, and osteoarthritis.",
-    href: "#",
-    image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=1000&auto=format&fit=crop",
-  },
-  {
-    id: "posture",
-    title: "Posture Correction",
-    description: "Biomechanical assessments and targeted exercises to fix imbalances and prevent recurring pain.",
-    href: "#",
-    image: "https://images.unsplash.com/photo-1552674605-15cff24f3c88?q=80&w=1000&auto=format&fit=crop",
-  },
-  {
-    id: "manual-therapy",
-    title: "Manual Therapy",
-    description: "Hands-on joint mobilization and soft tissue manipulation to reduce pain and increase flexibility.",
-    href: "#",
-    image: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=1000&auto=format&fit=crop",
-  },
-  {
-    id: "dry-needling",
-    title: "Dry Needling",
-    description: "Precision treatment using fine needles to release muscle tension and deactivate trigger points.",
-    href: "#",
-    image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=1000&auto=format&fit=crop",
-  },
-  {
-    id: "strength",
-    title: "Strength & Conditioning",
-    description: "Personalised exercise programming to build resilience, prevent injuries, and enhance longevity.",
-    href: "#",
-    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000&auto=format&fit=crop",
   },
 ];
 
@@ -115,7 +73,7 @@ export function Conditions() {
               Our Services
             </h2>
             <p className="max-w-lg text-white/70 text-lg">
-              Evidence-based physiotherapy and rehabilitation programs designed to restore mobility, reduce pain, and get you back to peak performance.
+              Our treatments address the root cause — not just the symptom. Whether you're an athlete or a desk worker, we help every body function optimally.
             </p>
           </div>
           <div className="hidden shrink-0 gap-3 md:flex">

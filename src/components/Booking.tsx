@@ -1,85 +1,64 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { AppointmentScheduler } from "@/components/ui/appointment-scheduler";
+import Link from "next/link";
+import { MapPin } from "lucide-react";
 
 export function Booking() {
-
-
-  // Get dates for the current month that have availability
-  const availableDates = [
-    { date: 14, hasSlots: true },
-    { date: 15, hasSlots: true },
-    { date: 16, hasSlots: true },
-    { date: 17, hasSlots: true },
-    { date: 20, hasSlots: true },
-    { date: 21, hasSlots: true },
-    { date: 22, hasSlots: true },
-    { date: 23, hasSlots: true },
-    { date: 24, hasSlots: true },
-    { date: 27, hasSlots: true },
-    { date: 28, hasSlots: true },
-    { date: 29, hasSlots: true },
-    { date: 30, hasSlots: true },
-  ];
-
-  const timeSlots = [
-    { time: "09:00", available: true },
-    { time: "09:30", available: true },
-    { time: "10:00", available: true },
-    { time: "10:30", available: true },
-    { time: "11:00", available: true },
-    { time: "11:30", available: true },
-    { time: "13:00", available: true },
-    { time: "13:30", available: true },
-    { time: "14:00", available: true },
-    { time: "14:30", available: true },
-    { time: "15:00", available: true },
-    { time: "15:30", available: true },
-    { time: "16:00", available: true },
-    { time: "16:30", available: true },
-    { time: "17:00", available: true },
-    { time: "17:30", available: true },
+  const locations = [
+    {
+      title: "Lockleaze Sports Centre",
+      body: "The home of The Bristol Body Repair Clinic. Full injury assessment, injury treatment and massage services available.",
+      link: "/lockleaze-sports-centre",
+    },
+    {
+      title: "Desklodge, Bristol",
+      body: "Massage services available across both Desklodge sites in Bristol.",
+      link: "/desklodge",
+    },
+    {
+      title: "Roots Fitness, Horton",
+      body: "Massage services now available at the beautiful home of Roots Fitness in Horton.",
+      link: "/rootsfitness",
+    },
   ];
 
   return (
-    <section className="py-24 bg-brand-light" id="book">
+    <section className="py-24 bg-brand-light" id="locations">
       <div className="container mx-auto px-6 lg:px-12">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+        <div
+          className="text-center mb-16 animate-fade-in"
         >
           <div className="inline-block bg-brand-teal/10 border border-brand-teal/20 text-brand-teal font-bold px-4 py-1.5 rounded-full text-sm mb-6 uppercase tracking-wider">
             Start Your Recovery
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-navy tracking-tight">
-            Book Your Consultation
+            Book Your Appointment
           </h2>
           <p className="mt-4 text-brand-text/70 text-lg max-w-2xl mx-auto">
-            Select a date and time that works for you to begin your personalized physiotherapy treatment plan.
+            Select a location that works for you.
           </p>
-        </motion.div>
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-          className="flex justify-center"
-        >
-          <AppointmentScheduler
-            userName="MyoSync Clinic"
-            userAvatar="/favicon.ico"
-            meetingTitle="Physiotherapy Consultation & Assessment"
-            meetingType="In-Person at Clinic"
-            duration="45 Minutes"
-            timezone="Europe/London"
-            availableDates={availableDates}
-            timeSlots={timeSlots}
-            brandName="MyoSync Clinic"
-          />
-        </motion.div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {locations.map((location, index) => (
+            <div
+              key={index}
+              className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-lg hover:-translate-y-2 transition-all duration-300 animate-fade-in"
+            >
+              <div className="w-16 h-16 bg-brand-light rounded-full flex items-center justify-center text-brand-teal mb-6">
+                <MapPin size={32} />
+              </div>
+              <h3 className="text-2xl font-bold text-brand-navy mb-4">{location.title}</h3>
+              <p className="text-brand-text/70 mb-8 flex-1">{location.body}</p>
+              <Link 
+                href={location.link}
+                className="w-full inline-block px-8 py-3.5 bg-brand-navy text-white rounded-full font-bold tracking-widest transition-colors hover:bg-brand-navy/90 shadow-sm"
+              >
+                BOOK HERE
+              </Link>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

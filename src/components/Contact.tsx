@@ -1,8 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
-import { MapPin, Phone, Mail, Clock, CheckCircle2 } from "lucide-react";
+import { MapPin, Mail, Clock, CheckCircle2 } from "lucide-react";
 
 export function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -15,24 +14,18 @@ export function Contact() {
   return (
     <section className="py-24 bg-brand-light" id="contact">
       <div className="container mx-auto px-6 lg:px-12">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+        <div
+          className="text-center mb-16 animate-fade-in"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-brand-navy">Get In Touch</h2>
           <div className="w-16 h-1 bg-brand-teal mx-auto mt-6 rounded-full" />
-        </motion.div>
+        </div>
 
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
           
           {/* LEFT: Contact Details */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            className="bg-white rounded-3xl p-8 md:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] h-full flex flex-col"
+          <div
+            className="bg-white rounded-3xl p-8 md:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] h-full flex flex-col animate-fade-in"
           >
             <div className="space-y-8 flex-grow">
               <div className="flex items-start gap-4">
@@ -41,17 +34,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-brand-navy mb-1">Address</h4>
-                  <p className="text-brand-text/80">MyoSync Clinic, Milton Keynes, MK3 6EB</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="bg-brand-teal/10 p-3 rounded-full text-brand-teal shrink-0">
-                  <Phone size={24} />
-                </div>
-                <div>
-                  <h4 className="font-bold text-brand-navy mb-1">Phone</h4>
-                  <a href="tel:01908000000" className="text-brand-teal font-medium hover:underline">01908 XXX XXX</a>
+                  <p className="text-brand-text/80">Lockleaze Sports Centre, Bristol</p>
                 </div>
               </div>
 
@@ -61,7 +44,27 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-brand-navy mb-1">Email</h4>
-                  <a href="mailto:info@myosyncclinic.com" className="text-brand-text/80 hover:text-brand-teal transition-colors">info@myosyncclinic.com</a>
+                  <a href="mailto:Stacey@thebristolbodyrepairclinic.co.uk" className="text-brand-text/80 hover:text-brand-teal transition-colors break-all">Stacey@thebristolbodyrepairclinic.co.uk</a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="bg-brand-teal/10 p-3 rounded-full text-brand-teal shrink-0">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                </div>
+                <div>
+                  <h4 className="font-bold text-brand-navy mb-1">Instagram</h4>
+                  <a href="https://www.instagram.com/bristolbodyrepairclinic" target="_blank" rel="noopener noreferrer" className="text-brand-text/80 hover:text-brand-teal transition-colors">@bristolbodyrepairclinic</a>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-4">
+                <div className="bg-brand-teal/10 p-3 rounded-full text-brand-teal shrink-0">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </div>
+                <div>
+                  <h4 className="font-bold text-brand-navy mb-1">Facebook</h4>
+                  <a href="https://www.facebook.com/share/15Yb1XcQ19/" target="_blank" rel="noopener noreferrer" className="text-brand-text/80 hover:text-brand-teal transition-colors">The Bristol Body Repair Clinic</a>
                 </div>
               </div>
 
@@ -72,8 +75,7 @@ export function Contact() {
                 <div>
                   <h4 className="font-bold text-brand-navy mb-1">Hours</h4>
                   <ul className="text-brand-text/80 space-y-1 mt-2">
-                    <li className="flex justify-between w-48"><span>Mon–Fri:</span> <span>9:00am – 6:00pm</span></li>
-                    <li className="flex justify-between w-48"><span>Saturday:</span> <span>9:00am – 1:00pm</span></li>
+                    <li className="flex justify-between w-48"><span>Mon–Sat:</span> <span>By appointment</span></li>
                     <li className="flex justify-between w-48"><span>Sunday:</span> <span>Closed</span></li>
                   </ul>
                 </div>
@@ -88,14 +90,11 @@ export function Contact() {
                 </p>
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* RIGHT: Contact Form */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="bg-white rounded-3xl p-8 md:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)]"
+          <div
+            className="bg-white rounded-3xl p-8 md:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] animate-fade-in"
           >
             {isSubmitted ? (
               <div className="h-full flex flex-col items-center justify-center text-center space-y-4 py-12">
@@ -132,7 +131,7 @@ export function Contact() {
                 </button>
               </form>
             )}
-          </motion.div>
+          </div>
 
         </div>
       </div>

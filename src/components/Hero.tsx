@@ -9,20 +9,22 @@ export function Hero() {
         <div>
           <header className="mb-12">
             <p className="text-xs tracking-wider text-brand-text/70 uppercase font-bold">
-              PHYSIOTHERAPY & REHABILITATION SPECIALISTS
+              Trusted by patients across Bristol & South Gloucestershire
             </p>
           </header>
 
           <main>
             <h1 className="text-4xl font-bold leading-tight tracking-tight text-brand-navy md:text-5xl lg:text-6xl mb-8">
-              Move Better. <br />
-              Recover Faster. <br />
-              <span className="text-brand-teal">Live Pain Free.</span>
+              Helping you to <br />
+              <span className="text-brand-teal">function optimally</span>
             </h1>
             <div className="my-8 h-1 w-20 bg-brand-teal rounded-full"></div>
             <div className="mb-10">
-              <p className="max-w-lg text-lg text-brand-text/70 mb-6">
-                Expert Physiotherapy & Rehabilitation Programs Designed To Restore Mobility, Reduce Pain And Help You Return To Your Best.
+              <p className="max-w-lg text-lg font-medium text-brand-navy mb-4">
+                High quality care for everyone
+              </p>
+              <p className="max-w-lg text-brand-text/80 mb-6">
+                The team at The Bristol Body Repair Clinic bring a wealth of experience in injury assessment, treatment and massage services. We work passionately in helping patients to reduce pain, enhance performance and to function optimally, whether that is at a desk, on a sports field, or just in day to day life. We take pride in developing excellent, individualised expert led rehabilitation programmes that are holistic, evidence based and delivered with care.
               </p>
               <ul className="space-y-2 mb-6">
                 {[
@@ -39,29 +41,22 @@ export function Hero() {
               </ul>
             </div>
             <div className="flex flex-wrap items-center gap-4">
-              <a href="#book" className="inline-block px-8 py-3.5 bg-brand-navy text-white rounded-full text-sm font-bold tracking-widest transition-colors hover:bg-brand-navy/90 shadow-lg shadow-brand-navy/30">
-                BOOK CONSULTATION
-              </a>
-              <a href="https://wa.me/447000000000" className="inline-block px-8 py-3.5 bg-white border-2 border-brand-teal text-brand-teal rounded-full text-sm font-bold tracking-widest transition-colors hover:bg-brand-teal hover:text-white">
-                WHATSAPP US
+              <a href="/locations" className="inline-block px-8 py-3.5 bg-brand-navy text-white rounded-full text-sm font-bold tracking-widest transition-colors hover:bg-brand-navy/90 shadow-lg shadow-brand-navy/30">
+                BOOK YOUR APPOINTMENT
               </a>
             </div>
           </main>
         </div>
 
         <footer className="mt-16 w-full pt-8 border-t border-brand-navy/5">
-          <div className="grid grid-cols-1 gap-6 text-sm font-medium text-brand-text/80 sm:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 text-sm font-medium text-brand-text/80 sm:grid-cols-2">
             <div className="flex items-center">
               <span className="mr-2">🌐</span>
-              <span>myosyncclinic.com</span>
-            </div>
-            <div className="flex items-center">
-              <span className="mr-2">📞</span>
-              <span>01908 XXX XXX</span>
+              <span>thebristolbodyrepairclinic.co.uk</span>
             </div>
             <div className="flex items-center">
               <span className="mr-2">📍</span>
-              <span>Milton Keynes, MK3 6EB</span>
+              <span>Lockleaze Sports Centre, Bristol</span>
             </div>
           </div>
         </footer>
